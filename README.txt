@@ -1,3 +1,21 @@
+This portfolio was built upon a template provided by HTML5 UP and customized by me,
+Drew Glavich. 
+
+From this project, I am gaining experience working in another developer's code base,
+and at the same time learning from a more experienced front-end developer than I.
+I call that a win-win.
+
+If you would like to see any of my projects that I have written from the ground up,
+please see my projects linked on this repo.
+
+Please see below for the original README contents.
+
+-----
+
+Original README contents:
+
+-----
+
 Forty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
