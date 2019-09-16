@@ -3124,7 +3124,6 @@ input, select, textarea {
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
-		text-transform: uppercase;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
@@ -3158,6 +3157,11 @@ input, select, textarea {
 
 			#header .logo:active strong {
 				background-color: #53e3fb;
+			}
+
+			#header .logo i {
+				font-size: 1.3em;
+				vertical-align: -10%;
 			}
 
 		#header nav {
