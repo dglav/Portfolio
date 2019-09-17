@@ -281,23 +281,24 @@
 			})
 			.on('click', 'a', function(event) {
 
-				var href = $(this).attr('href');
-				console.log(href);
+				let href = $(this).attr('href');
 
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-					$('html, body').animate({
-						scrollTop: $(href).offset().top - $header.height()
-					}, 800);
-
-				// Redirect.
-					window.setTimeout(function() {
-						// window.location.href = href;
-					}, 250);
+				if (href.search('/') === -1) {
+					event.preventDefault();
+					event.stopPropagation();
+	
+					// Hide.
+						$menu._hide();
+	
+						$('html, body').animate({
+							scrollTop: $(href).offset().top - $header.height()
+						}, 800);
+	
+					// Redirect.
+						window.setTimeout(function() {
+							// window.location.href = href;
+						}, 250);
+				}
 			});
 
 		$menu
