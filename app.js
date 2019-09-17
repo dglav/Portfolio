@@ -1,15 +1,27 @@
 let express = require('express'),
-    ejs     = require('ejs');
+    ejs     = require('ejs'),
+    bodyParser = require('body-parser');
     
 let app = express();
+let language = 'english';
 
 app.set('view engine', 'ejs');
 
 express.static(__dirname);
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get("/", function(req, res){
-    res.render("index");
+    if (language === 'english') {
+        res.render("index");
+    } else if (language == 'japanese') {
+        res.render("index_jp");
+    }
+});
+
+app.post("/", function(req, res){
+    language = req.body.language;
+    res.redirect("/");
 });
 
 app.get("/yelpcamp", function(req, res){
