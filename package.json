@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This portfolio was built upon a template provided by HTML5 UP and customized by me,\r Drew Glavich.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dglav/Portfolio.git"
+  },
+  "author": "Drew Glavich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dglav/Portfolio/issues"
+  },
+  "homepage": "https://github.com/dglav/Portfolio#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}

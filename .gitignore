@@ -1,2 +1,3 @@
-/images
-elements.html
+/node_modules
+/public/images
+/util/elements.html

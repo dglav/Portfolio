@@ -1,9 +1,9 @@
-This portfolio was built upon a template provided by HTML5 UP and customized by me,
-Drew Glavich. 
+This portfolio was built upon a html-css template provided by HTML5 UP and customized 
+by me, Drew Glavich. 
 
 From this project, I am gaining experience working in another developer's code base,
-and at the same time learning from a more experienced front-end developer than I.
-I call that a win-win.
+adding backend functionality and at the same time learning from a more experienced 
+front-end developer than I. I call that a win-win.
 
 If you would like to see any of my projects that I have written from the ground up,
 please see my projects linked on this repo.
