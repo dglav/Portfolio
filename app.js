@@ -48,6 +48,7 @@ app.get("/fitnessapp", function(req, res){
     res.render("projects/fitnessapp");
 });
 
-app.listen(3000, function(){
+let port = process.env.PORT || 3000;
+app.listen(port, function(){
     console.log('server started!');
 });
