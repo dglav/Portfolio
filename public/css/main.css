@@ -3605,6 +3605,18 @@ input, select, textarea {
 
 		}
 
+		#projectlink {
+			justify-content: center;
+		}
+
+			#projectlink li {
+				width: 50%;
+			}
+
+			#projectlink a {
+				width: 100%;
+			}
+
 /* Main */
 
 	#main {
