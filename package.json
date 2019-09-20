@@ -1,9 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "engines": {
-    "node": "10.3.0"
-  },
   "description": "This portfolio was built upon a template provided by HTML5 UP and customized by me,\r Drew Glavich.",
   "main": "app.js",
   "scripts": {
