@@ -11,12 +11,13 @@ express.static(__dirname);
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use(function(req, res, next){
+    res.locals.currentRoute = req.path;
+    next();
+});
+
 app.get("/", function(req, res){
-    if (language === 'english') {
-        res.render("index");
-    } else if (language == 'japanese') {
-        res.render("index_jp");
-    }
+    res.render(`${language}/index`);
 });
 
 app.post("/", function(req, res){
@@ -25,7 +26,8 @@ app.post("/", function(req, res){
 });
 
 app.get("/yelpcamp", function(req, res){
-    res.render("projects/yelpcamp");
+    res.locals.page ="/yelpcamp";
+    res.render(`${language}/projects/yelpcamp`);
 });
 
 app.get("/omnifood", function(req, res){
@@ -46,6 +48,11 @@ app.get("/todolist", function(req, res){
 
 app.get("/fitnessapp", function(req, res){
     res.render("projects/fitnessapp");
+});
+
+app.post("/:project", function(req, res){
+    language = req.body.language;
+    res.redirect(`${req.params.project}`);
 });
 
 let port = process.env.PORT || 3000;
