@@ -26,28 +26,27 @@ app.post("/", function(req, res){
 });
 
 app.get("/yelpcamp", function(req, res){
-    res.locals.page ="/yelpcamp";
     res.render(`${language}/projects/yelpcamp`);
 });
 
 app.get("/omnifood", function(req, res){
-    res.render("projects/omnifood");
+    res.render(`${language}/projects/omnifood`);
 });
 
 app.get("/weatherapp", function(req, res){
-    res.render("projects/weatherapp");
+    res.render(`${language}/projects/weatherapp`);
 });
 
 app.get("/colorgame", function(req, res){
-    res.render("projects/colorgame");
+    res.render(`${language}/projects/colorgame`);
 });
 
 app.get("/todolist", function(req, res){
-    res.render("projects/todolist");
+    res.render(`${language}/projects/todolist`);
 });
 
 app.get("/fitnessapp", function(req, res){
-    res.render("projects/fitnessapp");
+    res.render(`${language}/projects/fitnessapp`);
 });
 
 app.post("/:project", function(req, res){
