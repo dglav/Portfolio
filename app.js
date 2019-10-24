@@ -41,6 +41,10 @@ app.get("/weatherapp", function(req, res) {
   res.render(`${language}/projects/weatherapp`);
 });
 
+app.get("/monsters-rolodex", function(req, res) {
+  res.render(`${language}/projects/monsters-rolodex`);
+});
+
 app.get("/colorgame", function(req, res) {
   res.render(`${language}/projects/colorgame`);
 });
